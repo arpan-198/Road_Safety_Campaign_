@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .addr{
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .maindiv{
+            border:1px red solid;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: skyblue;
+        }
+
+        marquee{
+            background-color: grey;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        marquee a{
+            color: white;
+            background-color: skyblue;
+        }
+        
+        .foot{
+            display: block;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            background-image: linear-gradient(gray,grey,black); 
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 40px;
+        }
+    </style>
+
+    <script>
+        let changecolor=()=>{
+            document.body.style.backgroundColor="lightgreen";
+            document.getElementById('aa').style.backgroundColor="lightgreen";
+        }
+
+        let onsub=()=>{
+            alert("Thank You For Submission.")
+        }
+
+        let isParmanent=(idP)=>{
+            
+            let cA=document.getElementById('cAdr').value;
+            let cD=document.getElementById('cdist').value;
+            let cPi=document.getElementById('cpin').value;
+            let cPs=document.getElementById('cps').value;
+
+            if(idP.target.checked){
+                if(cA!="" && cD!="" && cPi != "" && cPs != ""){
+                    document.getElementById('pAdr').value=cA;
+                    document.getElementById('pdist').value=cD;
+                    document.getElementById('ppin').value=cPi;
+                    document.getElementById('pps').value=cPs;
+
+                    document.getElementById('pAdr').disabled=true;
+                    document.getElementById('pdist').disabled=true;
+                    document.getElementById('ppin').disabled=true;
+                    document.getElementById('pps').disabled=true;
+                }
+            }
+            else{
+                    document.getElementById('pAdr').value="";
+                    document.getElementById('pdist').value="";
+                    document.getElementById('ppin').value="";
+                    document.getElementById('pps').value="";
+
+                    document.getElementById('pAdr').disabled=false;
+                    document.getElementById('pdist').disabled=false;
+                    document.getElementById('ppin').disabled=false;
+                    document.getElementById('pps').disabled=false;
+            }
+        }
+    </script>
+
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="jumbotron bg-white text-center">
+        <h1 class="textstyle">User Online Registration As a Volunteer</h1><br>
+        <hr>
+        <div class="row">
+            <marquee behavior="alternate" direction="left"  scrollamount="7">Goto Contact Us <a id="aa" href="contactus.html">Click Here</a> </marquee><br>
+            <marquee behavior="alternate" direction="right"  scrollamount="7">Goto Home <a href="home.html">Click Here</a> </marquee>
+        </div>
+    </div>
+
+   <div class="textcenter">
+        <div class="maindiv">
+            <form onsubmit="onsub()">
+                <div class="addr">
+                    <label for="fname">First Name : </label><br>
+                    <input type="text"  id="fname" required><br>
+                    <label for="mname">Middle Name : </label><br>
+                    <input type="text"  id="mname"><br>
+                    <label for="lname">Last Name : </label><br>
+                    <input type="text"  id="lname" required><br>
+                </div><br>
+                <div class="row m-4 addr">
+                    <div class="col-md-3" >
+                        <h3>Current Address :</h3>
+                        <hr><br>
+                        <label for="cAdr">Address : </label><br>
+                        <input type="text"  id="cAdr" required><br>
+                        <label for="cdist">District </label><br>
+                        <input type="text"  id="cdist" required><br>
+                        <label for="cpin">Pincode : </label><br>
+                        <input type="text"  id="cpin" required><br>
+                        <label for="cps">Police Station </label><br>
+                        <input type="text"  id="cps" required><br>
+                        
+                        <input type="checkbox"  id="isP" onchange="isParmanent(event)">
+                        <label for="isP">Is it your Permanent Address ?</label><br>
+                        <span>(All fields must be filled)</span><br>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h3>Permanent Address :</h3>
+                        <hr><br>
+                        <label for="pAdr">Address : </label><br>
+                        <input type="text"  id="pAdr" required><br>
+                        <label for="pdist">District </label><br>
+                        <input type="text"  id="pdist" required><br>
+                        <label for="ppin">Pincode : </label><br>
+                        <input type="text"  id="ppin" required><br>
+                        <label for="pps">Police Station </label><br>
+                        <input type="text"  id="pps" required><br>
+                    </div>
+                    
+                </div><br>
+
+                <div class="addr">
+                    <label for="gen">Gender : </label>
+                    <input type="radio" id="male" name="gen" checked value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gen" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gen" value="other">
+                    <label for="other">Other</label><br>
+                </div><br>
+
+
+
+                <div class="addr">
+                    <label for="dob">Date of Birth (dd/mm/yyyy) : </label>
+                    <input type="text"  id="dob" required>
+                </div><br>
+
+
+
+
+                <div class="addr">
+                    <label for="occ">Choose your occupation:</label>
+
+                    <select name="occ" id="occ" required>
+                    <option value="" selected></option>    
+                    <option value="Bussiness">Bussiness</option>
+                    <option value="Government Employee">Government Employee</option>
+                    <option value="Private Sector">Private Sector</option>
+                    <option value="Student">Student</option>
+                    </select>
+                </div><br>
+
+                <div class="addr">
+                    <label for="email">Email : </label><br>
+                    <input type="email"  id="email" required><br>
+                    <label for="ph">Phone Number</label><br>
+                    <input type="text"  id="ph" pattern="[9 | 8 | 7]{1}[0-9]{9}" required><br>
+
+                </div><br>
+
+                <div class="addr">
+                    <label for="comment">Comments : </label><br>
+                    <textarea  id="comment" cols="100" rows="7" required></textarea><br>
+                </div><br>
+
+
+                <div class="addr">
+                    <input type="submit" class="btn" value="Submit" id="Submit">
+                    <input type="reset" class="btn" value="Reset">
+                    <input type="button" class="btn" value="ColourClick" onclick="changecolor()"><br>
+                </div>
+                
+                
+            </form>
+        </div>
+
+
+   </div><br><br>
+
+   <div style="padding-top: 100px;">
+       <div class="foot">
+           <p>© 2020 Road Safety Campaign.All Rights Reserved</p>
+       </div>
+   </div>
+</div>
+
+
+</body>
+</html>

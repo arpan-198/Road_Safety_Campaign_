@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        marquee{
+            background-color: grey;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        marquee a{
+            color: white;
+            background-color: skyblue;
+        }
+        .flexdiv{
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            padding: 15px;
+            justify-content: space-evenly;
+        }
+
+        .foot{
+            display: block;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            background-image: linear-gradient(gray,grey,black); 
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 40px;
+        }
+        div img{
+            border: 1px black solid;
+            width: 400px;
+            height: 300px;
+            padding: 10px;
+            box-shadow: -9px 9px 5px 0px rgba(163,158,125,1);
+        }
+        .linG{
+            display: block;
+            padding: 10px;
+            text-align: left;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px black solid ;
+            background-image: linear-gradient(black,gray,grey);   
+            box-shadow: -9px 9px 5px 0px rgba(207,201,207,1);   
+            width: 400px;      
+            height: 300px;
+        }
+
+        tr th{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            padding: 10px;
+            font-size: larger;
+            background-color: grey;
+            color: black;
+            text-align: center;
+        }
+ 
+
+        tr td{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            text-align: center;
+            font-size: medium;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="jumbotron bg-white text-center">
+        <h1 class="textstyle">Road Safety Campaign Schedule</h1><br>
+        <hr>
+        <div class="row mar">
+            <marquee behavior="alternate" direction="left"  scrollamount="7">Safe Drive Campaign <a href="safety_measures.html">Click Here</a> </marquee><br>
+            <marquee behavior="alternate" direction="right"  scrollamount="7">Goto Home <a href="home.html">Click Here</a> </marquee>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <h2 style="font-weight: bold;">INTRODUCTION</h2>
+        <hr><br>
+    </div>
+
+
+    <div class="text-center flexdiv">
+        <div >
+            <img src="images/rs.jpg" alt="Road Safety">
+        </div>
+        <div class="linG">
+            <h2 style="text-align: center;">Our Aim</h2><hr><br>
+            <ul>
+                <li>Don’t Over speed</li>
+                <li>Non Violation of Traffic Rules</li>
+                <li>Don’t use Mobile Phone while driving</li>
+                <li>Usage of Seatbelt</li>
+                <li>Don’t drink and Drive</li>
+                <li>Discouraging Under Age Driving</li>
+                <li>Pedestrian Safety</li>
+            </ul>
+        </div>
+        <div >
+            <img src="images/rs1.jpg" alt="Road Safety">
+        </div>
+    </div>
+
+    <div class="text-center" style="padding-top: 15px;">
+        <div>
+            <h2 style="font-weight: bold;">OUR SCHEDULES</h2>
+        <hr><br>
+        </div>
+
+        <div class="flexdiv">
+
+            <table border="1">
+                <tr>
+                    <th>Subject</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Place</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        Towards Clean and Inclusive Mobility
+                    </td>
+                    <td>24.10.2020</td>
+                    <td>
+                        09:00am-05:00pm
+                    </td>
+                    <td>
+                        Kolkata Sector Five
+                    </td>
+                </tr>
+                <tr>
+                    <td>28.10.2020</td>
+                    <td>
+                        09:00am-05:00pm
+                    </td>
+                    <td>
+                        Garstin Bastion Road, New Delhi
+                    </td>
+                </tr>
+
+
+
+
+                <tr>
+                    <td rowspan="2">
+                        Intelligence on the Move Transforming Road Transport and Logistics
+                    </td>
+                    <td>01.11.2020</td>
+                    <td>
+                        08:00am-11:00am
+                    </td>
+                    <td>
+                       Rashbihari Avenue ,Kolkata
+                    </td>
+                </tr>
+                <tr>
+                    <td>10.11.2020</td>
+                    <td>
+                        10:00am-04:00pm
+                    </td>
+                    <td>
+                        Aurobindo Marg, New Delhi
+                    </td>
+                </tr>
+
+
+
+
+
+
+                <tr>
+                    <td rowspan="3">
+                        Women Safety Concern
+                    </td>
+                    <td>12.11.2020</td>
+                    <td>
+                        04:00pm-01:00am
+                    </td>
+                    <td>
+                        Tollygunge Circular Rd,Kolkata
+                    </td>
+                </tr>
+                <tr>
+                    <td>23.11.2020</td>
+                    <td>
+                        07:00pm-11:00pm
+                    </td>
+                    <td>
+                        NH-24, New Delhi
+                    </td>
+                </tr>
+                <tr>
+                    <td>23.12.2020</td>
+                    <td>
+                        07:00pm-11:00pm
+                    </td>
+                    <td>
+                        Ajmal Khan Road, New Delhi
+                    </td>
+                </tr>
+
+
+
+
+
+                <tr>
+                    <td rowspan="2">
+                        Spreading Awarness of Safe Driving
+                    </td>
+                    <td>28.10.2020</td>
+                    <td>
+                        09:00am-05:00pm
+                    </td>
+                    <td>
+                        Hazra Road ,Kolkata
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">Not Scheduled</td>
+                    
+                </tr>
+
+
+
+
+
+                <tr>
+                    <td rowspan="2">
+                        Road Safety Awarness cum Health Check-Up Camp
+                    </td>
+                    <td>30.10.2020</td>
+                    <td>
+                        09:00am-05:00pm
+                    </td>
+                    <td>
+                        Esplanade,Kolkata
+                    </td>
+                </tr>
+                <tr>
+                    <td>30.11.2020</td>
+                    <td>
+                        09:00am-05:00pm
+                    </td>
+                    <td>
+                        Garstin Bastion Road, New Delhi
+                    </td>
+                </tr>
+
+
+
+
+
+
+                <tr>
+                    <td rowspan="2">
+                        Helmet and Traffic Rule's Booklet Distribution 
+                    </td>
+                    <td>29.10.2020</td>
+                    <td>
+                        09:00am-10:00am
+                    </td>
+                    <td>
+                        Park Circus,Kolkata
+                    </td>
+                </tr>
+                <tr>
+                    <td>28.12.2020</td>
+                    <td>
+                        08:00am-09:00am
+                    </td>
+                    <td>
+                        CP Inner circle, New Delhi
+                    </td>
+                </tr>
+                    
+                    
+                    
+                
+            </table>
+
+
+        </div><br><br>
+
+        <div style="padding-top: 100px;">
+            <div class="foot">
+                <p>© 2020 Road Safety Campaign.All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

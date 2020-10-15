@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .textStyle{
+        font-family: 'Lato', sans-serif;
+        }
+        .boxcard{
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            text-align: center;
+            padding: 10px;
+            margin: 3px;
+            box-sizing: border-box;
+            background-color: rgba(177, 171, 171, 0.938);
+            width: 200px;
+            height: 200px;
+            font-size: larger;
+        }
+        .boxcard:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            background-color: white;
+        }
+        .bText{
+            font-size: 1.3cm;
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .b1Text{
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flexdiv{
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .foot{
+            display: block;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            background-image: linear-gradient(gray,grey,black); 
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 40px;
+        }
+
+        .picinfo{
+            margin: 10px;
+            padding: 10px;
+            text-align: left;
+        }
+        .picinfo img{
+            width: 300px;
+            height: 300px;
+        }
+
+        marquee{
+            background-color: grey;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        marquee a{
+            color: white;
+            background-color: skyblue;
+        }
+        h2 a{
+            text-decoration: none;
+            display: inline-block;
+            color: white;
+            background-color: black;
+            
+        }
+        h2 a:hover{
+            cursor: pointer;
+            text-decoration: none;
+            background-color: white;
+            color: black;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="jumbotron bg-white text-center">
+        <h1 class="textstyle">Road Safety Campaign</h1><br>
+        <hr>
+        <div class="row mar">
+            <marquee behavior="alternate" direction="left"  scrollamount="7">Safe Drive Campaign <a href="safety_measures.html">Click Here</a> </marquee>
+        </div>
+        <h2 style="text-align: right;padding-right: 6px;"><a href="http://safeonroad.com/">safeonroad.com</a></h2>
+        
+
+    </div>
+    <div class="text-center">
+        <h2 style="font-weight: bold;">THE PROBLEMS</h2>
+        <hr><br>
+        <div class="flexdiv m-6 p-3 text-center">
+            <div class="boxcard">
+                <p class="bText">17</p>
+                <p>people die every hour on Indian Roads</p>
+            </div>
+            <div class="boxcard">
+                <p class="bText">4.07</p>
+                <p>LAKH CRORES costs to India due to road crashes annually</p>
+            </div>
+            <div class="boxcard">
+                <p class="bText">46</p>
+                <p>children die every day on Indian roads</p>
+            </div>
+            <div class="boxcard">
+                <p class="bText">50%</p>
+                <p>of road crash deaths could have been avoided with rapid assisstance</p>
+            </div>
+            <div class="boxcard">
+                <span class="bText">10</span><span class="b1Text">LAKH+</span>
+                <p>people were killed in road accidents over the past decade</p>
+            </div>
+            <div class="boxcard">
+                <span class="bText">50</span><span class="b1Text">LAKH+</span>
+                <p>were seriously injured or disabled in the past decade</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="text-center">
+
+        <h2 style="font-weight: bold;">FEW CAUSES OF ROAD ACCIDENT</h2>
+        <hr><br>
+    </div>
+    <div class="picinfo m-4 p-3">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="https://timesofindia.indiatimes.com/india/drivers-using-mobile-four-times-more-likely-to-have-accident-who-report/articleshow/69033785.cms" 
+                target="_self">
+                    <img src="images/distractDrive.jpg"  alt="Distracted Driving Kills" >
+                </a>
+            </div>
+
+            <div class="col-md-3" >
+                    <div class="row">
+                        <ul>
+                            <li> Drivers who use mobile phones while at the wheel are four times more likely to be involved an 
+                                accidents,according to the WHO.
+                            </li>
+        
+                        </ul>
+                    </div>
+               <div class="row">
+                <ul>
+                    <li>
+                        The WHO says the use of a mobile phone can impair the performance of several driving tasks,
+                        leading to longer reaction times to detect and respond to unexpected driving related events.
+                    </li>
+                </ul>
+               </div>
+            </div>
+
+            <div class="col-md-3">
+                <a href="https://timesofindia.indiatimes.com/city/chennai/78-of-people-who-died-in-car-accidents-didnt-wear-seat-belts/articleshow/72268194.cms" 
+                target="_self">
+                    <img src="images/seatbelt.jpg"  alt="Buckle Up" >
+                </a>
+            </div>
+
+            <div class="col-md-3" >
+                    <div class="row">
+                        <ul>
+                            <li> More than half of people who escaped with injuries in car
+                                accidents in Tamil Nadu in 2018 were wearing seat belts, shows data from
+                                the Union government’s road accident report.
+                            </li>
+        
+                        </ul>
+                    </div>
+               <div class="row">
+                <ul>
+                    <li>
+                        A total of 24,671 people were involved in car accidents in the state last
+                        year. Of the 22,603 people who escaped with injuries, 12,548 were
+                        wearing seat belts, said the report released in.
+                    </li>
+                </ul>
+               </div>
+            </div>
+
+
+           
+
+
+        </div><br><br>
+
+        <div class="row">
+
+
+            <div class="col-md-3">
+                <a href="https://en.wikipedia.org/wiki/Two-second_rule" 
+                target="_self">
+                    <img src="images/space.jpg"  alt="Buckle Up" >
+                </a>
+            </div>
+
+            <div class="col-md-3" >
+                    <div class="row">
+                        <ul>
+                            <li> The two-second rule is a rule of thumb by which a driver may 
+                                maintain a safe trailing distance at any speed.The rule is that a driver should ideally stay
+                                at least two seconds behind any vehicle that is directly in front of his or her vehicle. 
+                                It is intended for automobiles, although its general principle applies to other types of vehicles. 
+                                Some areas recommend a three-second rule instead of a two-second rule to give an additional buffer.
+                            </li>
+        
+                        </ul>
+                    </div>
+               <div class="row">
+                <ul>
+                    <li>
+                        The two-second rule is useful as it can be applied to any speed. 
+                        Drivers can find it difficult to estimate the correct distance from the car in front, 
+                        let alone remember the stopping distances that are required for a given speed, 
+                        or to compute the equation on the fly (BD = (SMPH/20)*SMPH). 
+                        The two-second rule gets around these problems and provides a simple and common-sense way of improving road safety
+                    </li>
+                </ul>
+               </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <a href="https://www.hindustantimes.com/india-news/over-speeding-drink-driving-top-reasons-for-accidents/story-WU61a0ZmZq0xFFwyY2YEsJ.html" 
+                target="_self">
+                    <img src="images/hurry.png"  alt="What's the hurry?" >
+                </a>
+            </div>
+
+            <div class="col-md-3" >
+                    <div class="row">
+                        <ul>
+                            <li> Over-speeding, drinkdriving, driving on wrong side, 
+                                jumping red light and talking on phone while driving have been found to be the five biggest 
+                                causes of road accidents in Uttar Pradesh — the state that tops the list in terms of deaths due to road mishaps in the country.
+                            </li>
+        
+                        </ul>
+                    </div>
+               <div class="row">
+                <ul>
+                    <li>
+                        Of the five factors identified as top killers, 
+                        over-speeding comes on the top,” IG traffic Deepak Ratan said. 
+                        It was revealed that exceeding the speed limit was found responsible for 13,843 mishaps in which 7,098 people were killed, 
+                        6,404 injured grievously and 2967 sustained minor injuries
+                    </li>
+                </ul>
+               </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="text-center">
+
+        <h2 style="font-weight: bold;">OUR COLLABORATORS</h2>
+        <hr><br>
+    </div>
+    <div class="picinfo m-4 p-3">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="https://www.who.int/violence_injury_prevention/road_safety_status/2018/en/" 
+                    target="_self">
+                        <img src="images/who.jpg"  alt="WHO" >
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="https://irsc.road-safety.co.in/home/" 
+                    target="_self">
+                        <img src="images/irsc_logo.png"  alt="IRSC" >
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="https://morth.nic.in/" 
+                    target="_self">
+                        <img src="images/mi.jpg"  alt="Ministry of Road Transport and Highways" >
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="https://wbtc.co.in/road-safety/" 
+                    target="_self">
+                        <img src="images/sdsl.jpeg"  alt="Safe Drive Save Life" >
+                </a>
+            </div>
+            
+
+        </div>
+    <div><br><br>
+
+        <div style="padding-top: 100px;">
+            <div class="foot">
+                <p>© 2020 Road Safety Campaign.All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
